@@ -1,0 +1,125 @@
+.site-nav {
+    display: none;
+}
+
+.header-contacts {
+    display: none;
+}
+
+.logo--color_dark {
+    color: #000000;
+}
+
+.page-header {
+    position: relative;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.page-header__container {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.open-mobile-menu-btn {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.open-mobile-menu-btn__icon {
+    fill: var(--primary-text-color);
+    cursor: pointer;
+    transition: fill var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
+
+
+/* site-navigation */
+
+// .site-nav {
+//     display: flex;
+//     margin-left: 93px;
+// }
+
+// .site-nav__item {
+//     position: relative;
+
+//     &:not(:last-child) {
+//         margin-right: 50px;
+//     }
+// }
+
+// .site-nav__link {
+//     display: block;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+
+//     color: var(--primary-text-color);
+//     @include font(14px, 500, 16px);
+//     letter-spacing: 0.02em;
+//     transition: color var(--transition-dur-and-func);
+
+//     &:hover,
+//     &:focus {
+//         color: var(--accent-color);
+//     }
+// }
+
+// .site-nav__link--current {
+//     color: var(--accent-color);
+
+//     &::after {
+//         content: "";
+//         box-sizing: border-box;
+//         position: absolute;
+//         bottom: 0;
+//         left: 0;
+//         transform: translateY(1px);
+//         width: 100%;
+//         height: 4px;
+//         background-color: var(--accent-color);
+//         border-radius: 2px;
+//     }
+// }
+
+/* contacts-header */
+
+// .header-contacts {
+//     display: flex;
+//     align-items: center;
+//     margin-left: auto;
+// }
+
+// .header-contacts__item:not(:last-child) {
+//     margin-right: 50px;
+// }
+
+// .header-contacts__link {
+//     @include align;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+
+//     color: var(--secondary-text-color);
+//     @include font(14px, 500, 16px);
+//     letter-spacing: 0.02em;
+
+//     transition: color var(--transition-dur-and-func);
+
+//     &:hover,
+//     &:focus {
+//         color: var(--accent-color);
+//     }
+// }
+
+// .header-contacts__icon {
+//     fill: currentColor;
+//     margin-right: 10px;
+// }
