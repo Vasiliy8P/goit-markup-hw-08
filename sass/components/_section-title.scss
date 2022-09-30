@@ -1,7 +1,14 @@
 .section-title {
-    font-size: 36px;
-    line-height: 1.17;
+    @include font(28px, 700, 33px);
     text-align: center;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        @include font(36px, 700, 42px);
+        margin-top: 0;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
 }

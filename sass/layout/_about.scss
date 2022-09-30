@@ -65,10 +65,6 @@
 }
         
 @media screen and (min-width: 1200px) {
-    .about-list {
-        flex-wrap: nowrap;
-    }
-
     .about-list__item {
         width: calc((100% - 90px) / 4);
     }
