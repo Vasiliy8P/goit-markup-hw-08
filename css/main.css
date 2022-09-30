@@ -59,8 +59,14 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
@@ -668,34 +674,13 @@ img {
     padding: 10px 32px;
   }
 }
-.about-list {
-  display: flex;
+.about-list__item {
+  margin-bottom: 30px;
 }
-.about-list .title-text {
-  padding-top: 30px;
-}
-.about-list .title {
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-.about-list .text {
-  color: var(--secondary-text-color);
-  line-height: 1.71;
-  margin-top: 0;
+.about-list__item:last-child {
   margin-bottom: 0;
 }
-
-.about-list-item {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
-}
-.about-list-item:nth-child(4n) {
-  margin-right: 0;
-}
-.about-list-item::before {
+.about-list__item::before {
   content: "";
   display: block;
   height: 120px;
@@ -704,22 +689,63 @@ img {
   background-position: center;
 }
 
-.icon-antenna::before {
+.about-list__icon-antenna::before {
   background-image: url("../images/icon/about/antenna.svg");
 }
 
-.icon-clock::before {
+.about-list__icon-clock::before {
   background-image: url("../images/icon/about/clock.svg");
 }
 
-.icon-diagram::before {
+.about-list__icon-diagram::before {
   background-image: url("../images/icon/about/diagram.svg");
 }
 
-.icon-astronaut::before {
+.about-list__icon-astronaut::before {
   background-image: url("../images/icon/about/astronaut.svg");
 }
 
+.about-list__title-text {
+  padding-top: 30px;
+}
+
+.about-list__title {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1428571429;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about-list__text {
+  color: var(--secondary-text-color);
+  line-height: 1.71;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .about-list__item {
+    margin-bottom: 0;
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-list {
+    flex-wrap: nowrap;
+  }
+  .about-list__item {
+    width: calc((100% - 90px) / 4);
+  }
+}
 .work-list {
   display: flex;
 }
