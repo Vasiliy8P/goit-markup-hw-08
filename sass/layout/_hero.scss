@@ -1,11 +1,11 @@
 .hero {
     background-color: #2F303A;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url("../images/hero/Img_hero.jpg");
-    max-width: 1600px;
+    max-width: 480px;
     margin-right: auto;
     margin-left: auto;
     background-repeat: no-repeat;
@@ -13,18 +13,71 @@
     background-size: cover;
 }
 
-.hero-title {
+.hero__title {
     margin-top: 0;
     margin-bottom: 30px;
 
     color: var(--white-text-color);
-    @include font(44px, 900, 60px);
+    @include font(26px, 900, 42px);
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
-.hero_button {
-    min-width: 216px;
-    padding: 10px 32px;
+.hero__button {
+    min-width: 200px;
+    padding: 10px 24px;
 }
+
+@media screen and (min-width: 768px) {
+    .hero { 
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        max-width: 1600px;
+    }
+
+    .hero-title {
+        @include font(44px, 900, 60px);
+    }
+
+    .hero_button {
+        min-width: 216px;
+        padding: 10px 32px;
+    }
+}
+
+// .hero {
+//     background-color: #2F303A;
+//     text-align: center;
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//         url("../images/hero/Img_hero.jpg");
+//     max-width: 1600px;
+//     margin-right: auto;
+//     margin-left: auto;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+// }
+
+// .hero-title {
+//     margin-top: 0;
+//     margin-bottom: 30px;
+
+//     color: var(--white-text-color);
+//     @include font(44px, 900, 60px);
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+// }
+
+// .hero_button {
+//     min-width: 216px;
+//     padding: 10px 32px;
+// }
 
