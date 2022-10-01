@@ -102,6 +102,8 @@
 
 .modal-form-own-check {
     @include align;
+    width: 16px; 
+    height: 15px;
     border: 2px solid var(--primary-text-color);
     border-radius: 2px;
     fill: var(--white-text-color);

@@ -202,9 +202,11 @@ img {
   }
   .mobile-menu__social-list {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
   }
   .mobile-menu__social-list-item {
-    padding-left: 10px;
     padding-right: 10px;
   }
   .mobile-menu__social-list-item:first-child {
@@ -467,6 +469,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 16px;
+  height: 15px;
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
   fill: var(--white-text-color);
