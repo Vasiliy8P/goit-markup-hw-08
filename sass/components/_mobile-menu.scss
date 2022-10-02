@@ -55,7 +55,7 @@
     }
 
     .mobile-menu__site-nav {
-        margin-bottom: auto;
+        // margin-bottom: auto;
     }
 
     .mobile-menu__site-nav-item:not(:last-child) {
@@ -79,6 +79,7 @@
     }
 
     .mobile-menu__contacts {
+        margin-top: auto;
         margin-bottom: 64px;
     }
 

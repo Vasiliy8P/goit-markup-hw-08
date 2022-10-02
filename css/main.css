@@ -156,9 +156,6 @@ img {
   .mobile-menu__close-icon:hover, .mobile-menu__close-icon:focus {
     fill: var(--accent-color);
   }
-  .mobile-menu__site-nav {
-    margin-bottom: auto;
-  }
   .mobile-menu__site-nav-item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -177,6 +174,7 @@ img {
     color: var(--accent-color);
   }
   .mobile-menu__contacts {
+    margin-top: auto;
     margin-bottom: 64px;
   }
   .mobile-menu__contacts-item:not(:last-child) {
@@ -334,7 +332,7 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow-y: scroll;
+  overflow: scroll;
 }
 
 .backdrop.is-hidden {
