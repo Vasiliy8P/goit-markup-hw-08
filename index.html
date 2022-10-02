@@ -153,7 +153,10 @@
                 <ul class="list work-list">
                     <li class="work-list-item">
                         <div class="item-content">
-                            <img class="work-image" src="./images/box_1.jpg" alt="Розробник працює на комп'ютері" width="370">
+                            <img 
+                                class="work-image" 
+                                srcset="./images/work/img-work-box1-desktop@2x.jpg 2x"
+                                src="./images/work/img-work-box1-desktop.jpg" alt="Розробник працює на комп'ютері">
                             <p class="text" >
                                 Десктопні додатки
                             </p>
@@ -161,7 +164,11 @@
                     </li>
                     <li class="work-list-item">
                         <div class="item-content">
-                            <img class="work-image" src="./images/box_2.jpg" alt="Людина дивиться на телевон в її руках" width="370">
+                            <img 
+                                class="work-image"
+                                srcset="./images/work/img-work-box2-desktop@2x.jpg 2x"                                 
+                                src="./images/work/img-work-box2-desktop.jpg" 
+                                alt="Людина дивиться на телевон в її руках">
                             <p class="text">
                                 Мобільні додатки
                             </p>
@@ -169,7 +176,11 @@
                     </li>
                     <li class="work-list-item">
                         <div class="item-content">
-                            <img class="work-image" src="./images/box_3.jpg" alt="Людина працює на планшеті в її руках" width="370">
+                            <img 
+                                class="work-image" 
+                                srcset="./images/work/img-work-box3-desktop@2x.jpg 2x"                                
+                                src="./images/work/img-work-box3-desktop.jpg" 
+                                alt="Людина працює на планшеті в її руках">
                             <p class="text">
                                 Дизайнерські рішення
                             </p>
@@ -184,7 +195,18 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="list team-list">
                     <li class="team-list-position">
-                        <img class="team-list-position-image" src="./images/img_igor_1.jpg" alt="Фотографія Ігора Дем'яненко">
+                        <picture>
+                            <source 
+                                srcset="./images/team/desktop/img1-team-igor-desktop.jpg 1x, ./images/team/desktop/img1-team-igor-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source 
+                                srcset="./images/team/tablet/img1-team-igor-tablet.jpg 1x, ./images/team/tablet/img1-team-igor-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source 
+                                srcset="./images/team/mobile/img1-team-igor-mobile.jpg 1x, ./images/team/mobile/img1-team-igor-mobile@2x.jpg 2x" 
+                                media="(max-width: 767px)">
+                            <img class="team-list-position-image" src="./images/team/mobile/img1-team-igor-mobile.jpg" alt="Фотографія Ігора Дем'яненко">
+                        </picture>                        
                         <div class="team-list-position-item">
                             <h3 class="member">Ігор Дем'яненко</h3>
                             <p class="position" lang="en">Product Designer</p>
@@ -221,7 +243,18 @@
                         </div>
                     </li>
                     <li class="team-list-position">
-                        <img class="team-list-position-image" src="./images/img_olga_2.jpg" alt="Фотографія Ольги Рєпіної">
+                        <picture>
+                            <source
+                                srcset="./images/team/desktop/img2-team-olga-desktop.jpg 1x, ./images/team/desktop/img2-team-olga-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source 
+                                srcset="./images/team/tablet/img2-team-olga-tablet.jpg 1x, ./images/team/tablet/img2-team-olga-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source 
+                                srcset="./images/team/mobile/img2-team-olga-mobile.jpg 1x, ./images/team/mobile/img2-team-olga-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)">
+                            <img class="team-list-position-image" src="./images/team/mobile/img2-team-olga-mobile.jpg" alt="Фотографія Ольги Рєпіної">
+                        </picture>                        
                         <div class="team-list-position-item">
                             <h3 class="member">Ольга Рєпіна</h3>
                             <p class="position" lang="en">Frontend Developer</p>
@@ -258,7 +291,18 @@
                         </div>
                     </li>
                     <li class="team-list-position">
-                        <img class="team-list-position-image" src="./images/img_mykola_3.jpg" alt="Фотографія Миколи Тарасова">
+                        <picture>
+                            <source
+                                srcset="./images/team/desktop/img3-team-mykola-desktop.jpg 1x, ./images/team/desktop/img3-team-mykola-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source 
+                                srcset="./images/team/tablet/img3-team-mykola-tablet.jpg 1x, ./images/team/tablet/img3-team-mykola-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source 
+                                srcset="./images/team/mobile/img3-team-mykola-mobile.jpg 1x, ./images/team/mobile/img3-team-mykola-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)">
+                                <img class="team-list-position-image" src="./images/team/mobile/img3-team-mykola-mobile.jpg" alt="Фотографія Миколи Тарасова">
+                        </picture>                        
                         <div class="team-list-position-item">
                             <h3 class="member">Микола Тарасов</h3>
                             <p class="position" lang="en">Marketing</p>
@@ -295,7 +339,18 @@
                         </div>                       
                     </li>
                     <li class="team-list-position">
-                        <img class="team-list-position-image" src="./images/img_mykhayilo_4.jpg" alt="Фотографія Михайла Єрмакова">
+                        <picture>
+                            <source
+                                srcset="./images/team/desktop/img4-team-mykhailo-desktop.jpg 1x, ./images/team/desktop/img4-team-mykhailo-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/team/tablet/img4-team-mykhailo-tablet.jpg 1x, ./images/team/tablet/img4-team-mykhailo-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source
+                                srcset="./images/team/mobile/img4-team-mykhailo-mobile.jpg 1x, ./images/team/mobile/img4-team-mykhailo-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)">
+                            <img class="team-list-position-image" src="./images/team/mobile/img4-team-mykhailo-mobile.jpg" alt="Фотографія Михайла Єрмакова">
+                        </picture>                        
                         <div class="team-list-position-item">
                            <h3 class="member">Михайло Єрмаков</h3>
                             <p class="position" lang="en">UI Designer</p> 
