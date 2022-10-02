@@ -132,6 +132,9 @@ img {
   }
   .mobile-menu__container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     padding-left: 40px;
     padding-top: 48px;
     padding-bottom: 48px;
@@ -154,7 +157,7 @@ img {
     fill: var(--accent-color);
   }
   .mobile-menu__site-nav {
-    margin-bottom: 302px;
+    margin-bottom: auto;
   }
   .mobile-menu__site-nav-item:not(:last-child) {
     margin-bottom: 32px;
@@ -209,9 +212,6 @@ img {
   .mobile-menu__social-list-item {
     padding-right: 10px;
   }
-  .mobile-menu__social-list-item:first-child {
-    padding-left: 0;
-  }
   .mobile-menu__social-list-item:last-child {
     padding-right: 0;
   }
@@ -233,6 +233,37 @@ img {
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
+  }
+}
+@media screen and (max-width: 479px) {
+  .mobile-menu__site-nav-link {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+  .mobile-menu__site-nav-item:not(:last-child) {
+    margin-bottom: 22px;
+  }
+  .mobile-menu__contacts {
+    margin-bottom: 40px;
+  }
+  .mobile-menu__contacts-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .mobile-menu__contacts-link-tel {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.4545454545;
+  }
+  .mobile-menu__contacts-link-mail {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5555555556;
+  }
+  .mobile-menu__social-list-link {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.8333333333;
   }
 }
 .button {
@@ -303,6 +334,7 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -507,6 +539,13 @@ img {
     line-height: 1.7142857143;
   }
 }
+@media screen and (max-width: 479px) {
+  .modal-form-checkbox-policy {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+}
 
 .modal-form-checkbox-policy-link {
   text-decoration-line: underline;
@@ -657,8 +696,6 @@ img {
     line-height: 1.1428571429;
   }
 }
-/* site-navigation */
-/* contacts-header */
 .hero {
   background-color: #2F303A;
   text-align: center;
@@ -708,6 +745,13 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+}
+@media screen and (max-width: 479px) {
+  .hero__title {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 2.1;
+  }
 }
 
 .hero__button {

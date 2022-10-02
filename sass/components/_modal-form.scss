@@ -137,6 +137,10 @@
     @media screen and (min-width: 1200px) {
         @include font(14px, 400, 24px)
     }
+
+    @media screen and (max-width: 479px) {
+        @include font(10px, 400, 14px)
+    }
 }
 
 .modal-form-checkbox-policy-link {
