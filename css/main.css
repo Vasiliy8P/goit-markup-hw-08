@@ -1283,7 +1283,7 @@ img {
   background-color: rgba(33, 150, 243, 0.9);
   padding: 24px;
   margin: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
   transform: translateY(101%);
   transition: transform var(--transition-dur-and-func);
 }
