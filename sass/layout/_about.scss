@@ -62,6 +62,10 @@
         margin-bottom: 0;
         width: calc((100% - 30px) / 2);
     }
+
+    .about-list__title {
+        text-align: start;
+    }
 }
         
 @media screen and (min-width: 1200px) {
